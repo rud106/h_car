@@ -105,13 +105,193 @@ section > p{
   float:left;
   background:rgb(255, 232, 147);
 }
+
+/* 견적내기 버튼 */
 .detail .price{
   font-size:32px;
   font-weight:bold;
 }
-.detail .price2{
+.price2{
   font-size:16px;
   line-height:50px;
   border:1px solid #333;
   padding:8px 40px;
+  transition:0.5s;
+}
+.price2:hover{
+  background:#333;
+  color:#fff;
+}
+
+/* top3 좌,우 방향버튼, 콘트롤 버튼 */
+#top3{
+  position:relative;
+}
+.top3 .swiper-button-next, .top3 .swiper-button-prev{
+  position:absolute;
+}
+.top3 .swiper-button-next{
+  font-size:1.6rem;
+  right:10% !important;
+  z-index:1000 !important;
+}
+.top3 .swiper-button-prev{
+  font-size:1.6rem;
+  left:10% !important;
+}
+.top3 .swiper-pagination2{
+  position:absolute;
+  bottom:-30px;
+  left:49.3%;
+}
+
+/* 소개페이지 서식 */
+#intro img{width:100%;}
+#intro > h2, #intro > strong, #intro > a{
+  position:absolute;
+  z-index:10;
+}
+#intro > h2{
+  width:100%;
+  text-align:center;
+}
+#intro > strong{
+  font-size:26px;
+  font-weight:bold;
+  line-height:30px;
+}
+.l_title{left:50px;top:150px;}
+.r_title{
+  right:50px;bottom:200px;
+  text-align:right;
+}
+
+/* 더보기 버튼 */
+#intro > a{
+  bottom:10px;
+  left:48%;
+  transform:translateY(-50%);
+}
+.more{
+  font-size:14px;
+  border:1px solid #333;
+  padding:6px 16px;
+  transition:0.5s;
+}
+.more:hover{
+  background:#333;
+  color:#fff;
+}
+
+/* 시승 신청 서식 */
+#text::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.p01{
+  font-weight:500;
+  font-size:14px;
+  line-height:20px;
+  padding:15px 0px;
+}
+.p02{
+  position:absolute;
+  bottom:-28px;
+  width:100%;
+  text-align:center;
+}
+.t_box{
+  position:relative;
+  width:460px;
+  height:260px;
+  float:left;
+  border:1px solid #ccc;
+  padding:15px;
+  margin-top:50px;
+  text-align:center;
+}
+.t_box:first-of-type{
+  margin-right:30px;
+  margin-left:120px;
+}
+.t_box:first-of-type > h3{
+  padding-top:20px;
+}
+.t_box > h3{
+  font-size:24px;
+  font-weight:bold;
+  line-height:40px;
+}
+.t_box:last-of-type h3{
+  padding-top:30px;
+}
+.btn01{
+  background:rgb(0, 15, 128);
+  color:#fff;
+  line-height:30px;
+  width:200px;
+  border:none;
+}
+.t_box a{
+  color:rgb(84, 194, 249);
+  line-height:50px;
+}
+.t_box a::after{
+  content:">";
+}
+
+/* 이벤트 서식 */
+.event_s{
+  position:relative;
+  width:1200px;
+  margin:0px auto;
+  overflow:hidden;
+  top:60px;
+}
+.swiper-pagination3{
+  text-align:center;
+  z-index:1;
+  padding-top:20px;
+}
+.swiper-pagination3 span{
+  margin:0px 3px;
+}
+
+/* 구매안내 서식 */
+#buy > h3{
+  font-size:24px;
+  text-align:center;
+  padding:60px 0px 50px 0px;
+  font-weight:bold;
+}
+.t_color01{color:rgb(0, 27, 228);}
+#buy ul{
+  width:1000px;
+  margin:3px auto;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+}
+#buy ul > li{
+  width:30%;
+  text-align:center;
+  margin-bottom:60px;
+}
+#buy > ul > li h4{
+  font-size:16px;
+  font-weight:bold;
+}
+#buy ul > li img{
+  width:70px;
+  padding:15px 0px;
+}
+.p03{
+  line-height:20px;
+}
+#buy iframe{
+  border:none;
+  width:1000px;
+  height:600px;
+  margin:0px 25%;
 }
