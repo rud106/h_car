@@ -4,6 +4,13 @@ $f_color02:#fff;
 $f_size01:12px; //일반 본문 글자크기
 $f_size02:16px; //내비게이션 글자크기
 
+$width:1200px;
+$margin:0px auto;
+@mixin b_center{
+  width:$width;
+  margin:$margin;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
 
 /* 모든 페이지에 공통으로 적용되는 서식 */
@@ -115,7 +122,38 @@ nav{
 
 
 /* 푸터공통서식 */
-footer{
-  height:177px;
+footer {
+  padding:40px 0px;
   background-color:#1A191A;
+  color:#ccc;
+}
+footer .f_inner{
+  @include b_center;
+}
+footer h2{
+  float:left;
+  width:150px;height:60px;
+}
+footer .f_lnb, address{
+  width:1000px;
+  padding-left:50px;
+  float:left;
+}
+.f_lnb ul{
+  display:flex;
+  padding-top:15px;
+}
+.f_lnb ul > li > a{
+  border-right:1px solid #ccc;
+  color:#ccc;
+  padding:0px 20px;
+}
+.f_lnb ul > li:last-child > a{border:none;}
+.f_lnb ul > li:nth-child(2) > a{
+  color:#fff;
+  font-weight:bold;
+}
+footer address{
+  padding-top:20px;
+  line-height:30px;
 }
